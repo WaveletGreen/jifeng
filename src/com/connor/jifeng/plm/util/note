@@ -1,0 +1,32 @@
+驱动       oracle.jdbc.driver.OracleDriver
+地址     jdbc:oracle:thin:@MY_ip:MY_port:MY_sid
+用户名  xxxx
+密码   yyyyy
+
+引用第三方的架包：class12.jar
+第一步，加载驱动： Class.forName(driver);
+第二部，连接数据库，得到   java.sql.Connection  connection = DriverManager.getConnection(url, dbName, dbPassword);
+						connection.setAutoCommit(false);//一般都设置为false，表示不进行自动报错
+第三部，拼接SQL语句
+String sql //创建table ，增（insert ）删（delect ）改 （update）查（select）
+第四部，获取ps ，PreparedStatement ps = connection.prepareStatement(sql);
+ 第五步，执行SQL
+=ps.execute()
+=ps.executeUpdate();
+//通常select的时候用
+ResultSet rs=ps.executeQuery();
+第六部，循环rs获取到查询结果或者进行commit操作
+
+//获取列数
+int columns = resultXMXX.getMetaData().getColumnCount();
+//循环行数
+while (resultXMXX.next()) {
+	for (int i = 1; i <= columns; i++) {
+		//获取所在行的第i列的结果
+		resultXMXX.getString(i) ;
+	}
+}
+
+第七步，资源释放，先释放rs ，ps，connection
+
+

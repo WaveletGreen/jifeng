@@ -1,0 +1,1412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+<!-- 定义commond    JF3_GGSQPSDRevision!-->
+   <extension
+         point="org.eclipse.ui.commands">
+    
+	  <command
+       		id="JF3_DFBWTQD_YFB"
+      		name= "打分表和问题清单（研发部）"> 
+      </command>
+      <command
+            id="createWLDCBCommond"
+            name="物料调查表">
+      </command>
+      <command
+            id="createBGTZDCommond"
+            name="变更通知单">
+      </command>
+      <command
+            id="createGGGJBCommond"
+            name="更改跟进表">
+      </command>
+      <command  
+      		id="autoUpdateCommond"
+            name="修订升版">
+      </command>
+      <command  
+      		id="projectChangeCommond"
+            name="工程更改记录">
+      </command>
+      <command  
+      		id="exchangeBom"
+            name="图纸BOM转物料BOM">
+      </command>
+       <command  
+      		id="exportBom"
+            name="物料BOM导出">
+      </command>
+      <!-->新建功能的   commond   的扩展点<!-->
+      <command id="Item" name="零部件"> </command>
+      <command id="Document" name="文件"> </command>
+      <command id="JF3_HTPSB" name="合同评审表"> </command>
+	<command id="JF3_FXPJB" name="风险评价表"> </command>
+	<command id="JF3_XMKXXFXBG" name="项目可行性分析报告"> </command>
+	<command id="JF3_XZKXXCN" name="小组可行性承诺"> </command>
+	<command id="JF3_XMQDRWS" name="项目启动任务书"> </command>
+	<command id="JF3_XMLXQD" name="项目联系清单"> </command>
+	<command id="JF3_XXMTZPSB" name="新项目图纸评审表（评审指南）"> </command>
+	<command id="JF3_XMJSWJQD" name="项目技术文件清单"> </command>
+	<command id="JF3_XMXZMD" name="项目小组名单"> </command>
+	<command id="JF3_XMJDB" name="项目进度表（总部）"> </command>
+	<command id="JF3_XMJDB_XG" name="项目进度表（小港）"> </command>
+	<command id="JF3_XMQDB" name="项目启动表"> </command>
+	<command id="JF3_HYJY" name="会议纪要"> </command>
+	<command id="JF3_XMQDJCB" name="项目重要节点检查表_项目启动"> </command>
+	<command id="JF3_DYJDZJ" name="第一阶段总结"> </command>
+	<command id="JF3_ZLMBPPM" name="质量目标PPM"> </command>
+	<command id="JF3_BFL" name="报废率"> </command>
+	<command id="JF3_BJBOM" name="报价BOM"> </command>
+	<command id="JF3_BZQD" name="标准清单"> </command>
+	<command id="JF3_XXMGYPSHYJY" name="新项目工艺评审会议纪要"> </command>
+	<command id="JF3_SYDG_YFB" name="试验大纲(研发部)"> </command>
+	<command id="JF3_CPGNJZ" name="产品功能矩阵"> </command>	
+	<command id="JF3_DFMEA" name="DFMEA"> </command>
+	<command id="JF3_SJBOM" name="设计BOM"> </command>
+	<command id="JF3_TZHSJQD_YFB" name="图纸和数据清单（研发部）"> </command>
+	<command id="JF3_WTQD_YFB" name="问题清单（研发部）"> </command>
+	<command id="JF3_SJPSBG" name="设计评审报告"> </command>
+	<command id="JF3_CAEBG" name="CAE报告"> </command>
+	<command id="JF3_GCLCT_YFB" name="过程流程图（研发部）"> </command>
+	<command id="JF3_TSTXQD_YFB" name="特殊特性清单（研发部）"> </command>
+	<command id="JF3_GZQD_YFB" name="工装清单（研发部）"> </command>
+	<command id="JF3_SLMKFRWS_YFB" name="塑料模开发任务书（研发部）"> </command>
+	<command id="JF3_CPSJRWS_YFB" name="裁片设计任务书（研发部）"> </command>
+	<command id="JF3_GZRWS_YFB" name="工装任务书（研发部）"> </command>
+	<command id="JF3_MJKFZZSQ_YFB" name="模架开发制造申请表（研发部）"> </command>
+	<command id="JF3_SJFFJL_YFB" name="数据发放记录（研发部）"> </command>
+	<command id="JF3_CPPZB_YFB" name="产品配置表（研发部）"> </command>
+	<command id="JF3_YJPSB_YFB" name="样件评审表（研发部）"> </command>
+	<command id="JF3_XMJYJL_YFB" name="项目交样记录（研发部）"> </command>
+	<command id="JF3_CPBZT_YFB" name="产品爆炸图（研发部）"> </command>
+	<command id="JF3_LJLLB_YFB" name="零件履历表（研发部）"> </command>
+	<command id="JF3_BMCLYQ_YFB" name="表面处理要求（研发部）"> </command>
+	<command id="JF3_CPBZQSM_YFB" name="产品标识区域说明（研发部）"> </command>
+	<command id="JF3_FCQD_YFB" name="防错清单（研发部）"> </command>
+	<command id="JF3_HJJSYQ_YFB" name="焊接技术要求（研发部）"> </command>
+	<command id="JF3_LLBTXSM_YFB" name="零件履历表填写说明（研发部）"> </command>
+	<command id="JF3_XNJSYQ_YFB" name="性能技术要求（研发部）"> </command>
+	<command id="JF3_YDCSYQ_YFB" name="硬度测试要求（研发部）"> </command>
+	<command id="JF3_ZSJPWYS_YFB" name="注塑件皮纹颜色认可记录表（研发部）"> </command>
+	<command id="JF3_FRYCLYB_YFB" name="缝纫原材料样板清单（研发部）"> </command>
+	<command id="JF3_KHZL_YFB" name="客户资料（研发部）"> </command>
+	<command id="JF3_SZWTQD_YFB" name="试制问题清单（研发部）"> </command>
+	<command id="JF3_KHDD_YFB" name="客户订单（研发部）"> </command>
+	<command id="JF3_KFJDB_YFB" name="开发进度表(研发部)"> </command>	
+	<command id="JF3_QQKFFYQD_YFB" name="前期开发费用清单(研发部)"> </command>	
+	<command id="JF3_TZPSBG_YFB" name="头枕评审报告(研发部)"> </command>	
+	<command id="JF3_FSPSBG_YFB" name="扶手评审报告(研发部)"> </command>		
+	<command id="JF3_SJDJJCB" name="项目重要节点检查表_设计点检"> </command>
+	<command id="JF3_DEJDZJ" name="第二阶段总结"> </command>
+	<command id="JF3_TZHSJQD" name="图纸和数据清单"> </command>
+	<command id="JF3_GCLCT" name="过程流程图"> </command>
+	<command id="JF3_TSTXQD" name="特殊特性清单"> </command>
+	<command id="JF3_CLTDB" name="材料替代表"> </command>
+	<command id="JF3_BOM" name="BOM"> </command>
+	<command id="JF3_GZQD" name="工装清单（总部）"> </command>
+	<command id="JF3_GZQD_XG" name="工装清单（小港）"> </command>
+	<command id="JF3_SLMKFRWS" name="塑料模开发任务书"> </command>
+	<command id="JF3_CPSJRWS" name="裁片设计任务书"> </command>
+	<command id="JF3_GZRWS" name="工装任务书"> </command>
+	<command id="JF3_MJKFZZSQB" name="模架开发制造申请表"> </command>
+	<command id="JF3_GZSCXJSRWS" name="工装生产线建设任务书"> </command>
+	<command id="JF3_MJGZRWS_XG" name="模具工装任务书（小港）"> </command>
+	<command id="JF3_JJRWS_XG" name="检具任务书（小港）"> </command>
+	<command id="JF3_DMSQD" name="刀模申请单"> </command>
+	<command id="JF3_SJFFJL" name="数据发放记录"> </command>
+	<command id="JF3_WTQD" name="问题清单"> </command>
+	<command id="JF3_SYDG" name="试验大纲"> </command>
+	<command id="JF3_CPPZB" name="产品配置表"> </command>
+	<command id="JF3_PFMEA" name="PFMEA"> </command>
+	<command id="JF3_KZJH_YJ" name="控制计划(样件)"> </command>
+	<command id="JF3_YJPSB" name="样件评审表（总部）"> </command>
+	<command id="JF3_YJPSBG_XG" name="样件评审报告（小港）"> </command>
+	<command id="JF3_YJYJQD" name="样件移交清单"> </command>	
+	<command id="JF3_DFBWTQD" name="打分表和问题清单"> </command>
+	<command id="JF3_CPBZT" name="产品爆炸图"> </command>
+	<command id="JF3_LJLLB" name="零件履历表"> </command>
+	<command id="JF3_BMCLYQ" name="表面处理要求"> </command>
+	<command id="JF3_CPBZQYSM" name="产品标识区域说明"> </command>
+	<command id="JF3_FCQD" name="防错清单"> </command>
+	<command id="JF3_HJJSYQ" name="焊接技术要求"> </command>
+	<command id="JF3_LJLLBTXSM" name="零件履历表填写说明"> </command>
+	<command id="JF3_YDCSYQ" name="硬度测试要求"> </command>
+	<command id="JF3_ZSJPWYSRKJL" name="注塑件皮纹颜色认可记录表"> </command>
+	<command id="JF3_FRYCLYBQD" name="缝纫原材料样板清单"> </command>
+	<command id="JF3_JYZDSQD_ZDS" name="检验指导书清单和检验指导书（总部）"> </command>
+	<command id="JF3_OTSJCB" name="项目重要节点检查表_OTS"> </command>
+	<command id="JF3_ZYZDSQD" name="作业指导书清单"> </command>
+	<command id="JF3_ZYZDS" name="作业指导书（总部）"> </command>
+	<command id="JF3_ZYZDS_XG" name="作业指导书（小港）"> </command>
+	<command id="JF3_GYSJSXYQD" name="供应商技术协议清单"> </command>
+	<command id="JF3_MLFHJSXY" name="面料复合技术协议"> </command>
+	<command id="JF3_PUMFHJSXY" name="PU膜复合技术协议"> </command>
+	<command id="JF3_KTJSXYS" name="卡条技术协议书"> </command>
+	<command id="JF3_PVCJSXYS" name="PVC技术协议书"> </command>
+	<command id="JF3_ZPMLJSXYS" name="真皮面料技术协议书"> </command>
+	<command id="JF3_ZWMLJSXYS" name="织物面料技术协议书"> </command>
+	<command id="JF3_SLLZJSXYS" name="塑料粒子技术协议书"> </command>
+	<command id="JF3_WXLJJSXYS" name="外协零件技术协议书"> </command>
+	<command id="JF3_BXGGZJSYQ" name="不锈钢管子技术要求"> </command>
+	<command id="JF3_DTGGJSXY" name="低碳钢管技术协议"> </command>
+	<command id="JF3_GGJSXY_XG" name="钢管技术协议（小港）"> </command>
+	<command id="JF3_3CRZSQQRB" name="3C认证申请确认表"> </command>
+	<command id="JF3_TZ3CZLTZ" name="头枕3C申请资料"> </command>
+	<command id="JF3_NSJ3CSQZL" name="内饰件3C申请资料"> </command>
+	<command id="JF3_XMJYJL" name="项目交样记录"> </command>
+	<command id="JF3_KHZL" name="客户资料"> </command>
+	<command id="JF3_SZWJ" name="试制文件"> </command>
+	<command id="JF3_SZWTQD" name="试制问题清单"> </command>
+	<command id="JF3_KHDD" name="客户订单"> </command>
+	<command id="JF3_IMDS_CAMDS" name="IMDS和CAMDS"> </command>
+	<command id="JF3_KZJH_SSC" name="控制计划(试生产）"> </command>
+	<command id="JF3_PXJH" name="培训计划"> </command>
+	<command id="JF3_LCGHJCB" name="项目重要节点检查表_量产规划"> </command>
+	<command id="JF3_XMLCGHQD" name="项目量产规划清单"> </command>
+	<command id="JF3_GZYJB" name="工装移交表"> </command>
+	<command id="JF3_XMLCGHHYJY" name="项目量产规划会议纪要"> </command>
+	<command id="JF3_ZXPSB_XG" name="整线评审表（小港）"> </command>
+	<command id="JF3_DSJDZJ" name="第三阶段总结"> </command>
+	<command id="JF3_GZKFJDB" name="工装开发进度表"> </command>
+	
+	<command id="JF3_FGFQD" name="分供方清单"> </command>
+	<command id="JF3_QQZLFXCH" name="前期质量风险策划"> </command>
+	<command id="JF3_LJCLJYBG" name="零件材料检验报告"> </command>
+	<command id="JF3_LJXNJYBG" name="零件性能试验报告"> </command>
+	<command id="JF3_LJCCJYBG" name="零件尺寸检验报告"> </command>
+	
+	<command id="JF3_JJSYSMS" name="检具使用说明书"> </command>
+	<command id="JF3_GYSSJ" name="供应商首件"> </command>
+	<command id="JF3_GYSPPAP" name="供应商PPAP"> </command>
+	<command id="JF3_GYSZLWTCL" name="供应商质量问题处理"> </command>
+	<command id="JF3_SCZBJH" name="生产准备计划"> </command>
+	<command id="JF3_CNXQFX" name="产能需求分析"> </command>
+	<command id="JF3_CLCSBG_NB" name="材料测试报告（内部）"> </command>
+	<command id="JF3_CLCSBG_WW" name="材料测试报告（委外）"> </command>
+	<command id="JF3_XNCSBG_NB" name="性能测试报告（内部）"> </command>
+	<command id="JF3_XNCSBG_WW" name="性能测试报告（委外）"> </command>
+	<command id="JF3_CCCSBG_NB" name="尺寸测试报告（内部）"> </command>
+	<command id="JF3_CCCSBG_WW" name="尺寸测试报告（委外）"> </command>
+	<command id="JF3_LJAQCSBG" name="零件安全测试报告"> </command>
+	<command id="JF3_CPPBQD" name="裁片排版清单"> </command>
+	<command id="JF3_FRJSYQ" name="缝纫技术要求"> </command>
+	<command id="JF3_ZXPSB" name="整线评审表（总部）"> </command>
+	<command id="JF3_BZGF" name="包装规范（总部）"> </command>
+	<command id="JF3_CJPMBJT" name="车间平面布局图"> </command>
+	<command id="JF3_PXJL" name="培训记录（总部）"> </command>
+	<command id="JF3_PXJL_XG" name="培训记录（小港）"> </command>
+	<command id="JF3_KZJH_SC" name="控制计划（生产）"> </command>
+	<command id="JF3_GZJYJL" name="工装交验记录"> </command>
+	<command id="JF3_XMLCPSB" name="项目量产评审表"> </command>
+	<command id="JF3_NBGCSHBG" name="内部过程审核报告"> </command>
+	<command id="JF3_DSIJDZJ" name="第四阶段总结"> </command>
+	<command id="JF3_MSAXYFX" name="MSA小样分析"> </command>
+	<command id="JF3_MSACFXZXXFX" name="MSA重复性再现性分析"> </command>
+	<command id="JF3_SPC" name="SPC"> </command>
+	<command id="JF3_X_2FX" name="X_R分析"> </command>
+	<command id="JF3_JJJDBG" name="检具鉴定报告（总部）"> </command>
+	<command id="JF3_FYJQD" name="封样件清单"> </command>
+	<command id="JF3_WGJPZBG" name="外观件批准报告"> </command>
+	<command id="JF3_WGSC" name="外观手册"> </command>
+	<command id="JF3_EZJH" name="遏制计划"> </command>
+	<command id="JF3_PSWKHPZBG" name="PSW客户批准报告"> </command>
+	<command id="JF3_PPAPZLQD" name="PPAP资料清单"> </command>
+	<command id="JF3_KHGCSHBG" name="客户过程审核报告"> </command>
+	<command id="JF3_SBNLFX" name="设备能力分析"> </command>
+	<command id="JF3_GZJDB_PIPFP" name="工装鉴定表（PIP发泡）"> </command>
+	<command id="JF3_GZJDB_DM" name="工装鉴定表（刀模）"> </command>
+	<command id="JF3_GZJDB_PTPM" name="工装鉴定表（普通泡沫）"> </command>
+	<command id="JF3_GZJDB_ZPGZ" name="工装鉴定表（装配工装）"> </command>
+	<command id="JF3_XXMPPJH" name="新项目爬坡计划"> </command>
+	<command id="JF3_BZPJ" name="包装评价（总部）"> </command>
+	<command id="JF3_XXMZLPJB" name="新项目质量评价表"> </command>
+	<command id="JF3_YJZLBSXWJPJB" name="移交质量部所需文件评价表(小港)"> </command>	
+	<command id="JF3_YJHHYJY" name="移交会会议纪要"> </command>
+	<command id="JF3_XMLSKFJYJL" name="项目历史开发经验记录"> </command>
+	<command id="JF3_CXFWHZC" name="持续服务和支持"> </command>
+	
+	
+	
+ <!--> 2015.10.28新增item加入APQP新建<!-->	
+	<command id="JF3_BZGF_XG" name="包装规范（小港）"> </command>
+	<command id="JF3_BZPJ_XG" name="包装评价（小港）"> </command>
+	<command id="JF3_GZJDB_XG" name="工装鉴定表（小港）"> </command>
+	<command id="JF3_JJJDBG_XG" name="检具鉴定报告（小港）"> </command>
+		<command id="JF3_XNJSYQ" name="性能技术要求"> </command>
+	<!--> 2015.10.28新增item加入APQP新建<!-->	 
+ 
+  <!--> 2015.11.19新增item加入APQP新建<!-->	
+	<command id="JF3_JLJYZDS" name="进料检验指导书"> </command>
+	<command id="JF3_JYZDS" name="检验指导书"> </command>
+	<command id="JF3_JYJLD" name="检验记录单"> </command>	
+	<command id="JF3_DWJDZJ" name="第五阶段总结"> </command>	
+	<!--> 2015.11.19新增item加入APQP新建<!-->	 
+ 
+  <!--> 2015.12.21新增item加入APQP新建<!-->
+   	<command id="JF3_JGBZS" name="加工标准书（小港）"> </command>
+   <!-->
+   <command id="JF3_SJFFJL_YFB" name="数据发放记录（研发部）"> </command>
+<command id="JF3_SJFFJL" name="数据发放记录"> </command>
+<!-->
+
+
+<command id="JF3_GGSQPSD" name="更改申请评审单"> </command>
+<command id="JF3_GCGGTZD" name="工程更改通知单"> </command>
+<command id="JF3_WLDCB" name="物料调查表"> </command>
+<command id="JF3_GCGGGJB" name="工程更改跟进表"> </command>
+<command id="JF3_GCGGJL" name="工程更改记录"> </command>
+<command id="JF3_XMJHBGD" name="项目计划变更单"> </command>
+<command id="JF3_XMEOP" name="项目EOP"> </command>
+
+  <!--> 2016.3.3新增item加入APQP新建<!-->
+<command id="JF3_XMYS" name="项目预算"> </command>
+<command id="JF3_ZSMJJDB" name="注塑模具鉴定表"> </command>
+
+  <!--> 2016.8.22新增item加入APQP新建<!-->
+<command id="JF3_WXJJGQD" name="外协件价格清单"> </command>
+<command id="JF3_BZFY" name="包装费用"> </command>
+<command id="JF3_WLFY" name="物流费用"> </command>
+
+<!-->2016.9.19新增<!-->
+<command id="JF3_JSSMYSQD" name="技术项目验收清单"> </command>  
+
+<!-- ERP 
+
+JF3_ERP_WLFQ   JF3_ERP_WLECN    JF3_ERP_BOMTRANS   JF3_ERP_PROJ -->  
+<command id="JF3_ERP_WLFQ" name="物料废弃传递"> </command>
+<command id="JF3_ERP_WLECN" name="物料属性变更传递"> </command>
+<command id="JF3_ERP_BOMTRANS" name="BOM变更传递"> </command>
+<command id="JF3_ERP_PROJ" name="项目信息变更传递"> </command>
+<command id="JF3_ERP_CREATE_PROJ" name="项目经理创建项目"> </command>
+
+<!-->
+<command id="JF3_XMKXXFXBG" name="项目可行性分析报告"> </command>
+<command id="JF3_TZHSJQD_YFB" name="图纸数据清单（研发部）"> </command>
+<command id="JF3_TZHSJQD" name="图纸数据清单"> </command>
+<command id="JF3_YJPSB_YFB" name="样件评审表（研发部）"> </command>
+<command id="JF3_YJPSB" name="样件评审表（项目部）"> </command>
+<command id="JF3_YJPSBG_XG" name="样件评审报告（小港）"> </command>
+<command id="JF3_YJYJQD" name="样件移交清单"> </command>
+<command id="JF3_ZXPSB" name="整线评审表"> </command>
+<command id="JF3_XMLCPSB" name="项目量产评审表"> </command>
+<command id="JF3_NBGCSHBG" name="内部过程审核报告"> </command>
+<command id="JF3_XMLSKFJYJL" name="项目历史开发经验记录"> </command>
+<command id="JF3_XMQDJCB" name="项目重要节点检查表_项目启动"> </command>
+<command id="JF3_SJDJJCB" name="项目重要节点检查表_设计点检"> </command>
+<command id="JF3_OTSJCB" name="项目重要节点检查表_OTS交样"> </command>
+<command id="JF3_LCGHJCB" name="项目重要节点检查表_量产规划"> </command>
+<command id="JF3_JSSMYSQD" name="技术项目验收清单"> </command>   
+  <!-->
+   </extension>
+   
+ <!-- 定义handler!-->  
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="com.connor.jifeng.plm.jfom001.JFomCreateBGTZDHandler"
+            commandId="createBGTZDCommond">
+      </handler>
+      <handler
+            class="com.connor.jifeng.plm.jfom001.JFomCreateGGGJBHandler"
+            commandId="createGGGJBCommond">
+      </handler>
+      <handler
+            class="com.connor.jifeng.plm.jfom001.JFomCreateWLDCBHandler"
+            commandId="createWLDCBCommond">
+      </handler>
+      <handler
+            class="com.connor.jifeng.plm.jfom002.JFomAutoUpdateHandler"
+            commandId="autoUpdateCommond">
+      </handler>
+      <handler
+            class="com.connor.jifeng.plm.jfom007.JFomProjectChangeHandler"
+            commandId="projectChangeCommond">
+      </handler>
+      <handler
+            class="com.connor.jifeng.plm.jfom008.JFomExchangeBomHandler"
+            commandId="exchangeBom">
+      </handler>
+      <handler
+            class="com.connor.jifeng.plm.jfom009.JFomBomExportHandler"
+            commandId="exportBom">
+      </handler>
+      <!-->对所有的新建功能的  handler  扩展点 <!-->
+      <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="Document"> </handler>
+      <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="Item"> </handler>
+      <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_HTPSB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_FXPJB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMKXXFXBG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XZKXXCN"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMQDRWS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMLXQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XXMTZPSB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMJSWJQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMXZMD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMJDB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMJDB_XG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMQDB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_HYJY"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMQDJCB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMYS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_DYJDZJ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_ZLMBPPM"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_BFL"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_BJBOM"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_BZQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XXMGYPSHYJY"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SYDG_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CPGNJZ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_DFMEA"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SJBOM"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_TZHSJQD_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_WTQD_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SJPSBG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CAEBG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GCLCT_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_TSTXQD_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZQD_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SLMKFRWS_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CPSJRWS_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZRWS_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_MJKFZZSQ_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SJFFJL_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CPPZB_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_YJPSB_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_DFBWTQD_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMJYJL_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CPBZT_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_LJLLB_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_BMCLYQ_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CPBZQSM_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_FCQD_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_HJJSYQ_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_LLBTXSM_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XNJSYQ_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_YDCSYQ_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_ZSJPWYS_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_FRYCLYB_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_KHZL_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SZWTQD_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_KHDD_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SJDJJCB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_DEJDZJ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_TZHSJQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GCLCT"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_TSTXQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CLTDB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_BOM"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZQD_XG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SLMKFRWS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CPSJRWS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZRWS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_MJKFZZSQB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZSCXJSRWS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_MJGZRWS_XG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_JJRWS_XG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_DMSQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SJFFJL"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_WTQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SYDG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CPPZB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_PFMEA"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_KZJH_YJ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_YJPSB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_YJPSBG_XG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_YJYJQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_DFBWTQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CPBZT"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_LJLLB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_BMCLYQ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CPBZQYSM"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_FCQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_HJJSYQ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_LJLLBTXSM"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_YDCSYQ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_ZSJPWYSRKJL"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_FRYCLYBQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_JGBZS"> </handler>
+
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_OTSJCB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_ZYZDSQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_ZYZDS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_ZYZDS_XG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GYSJSXYQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_MLFHJSXY"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_PUMFHJSXY"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_KTJSXYS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_PVCJSXYS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_ZPMLJSXYS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_ZWMLJSXYS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SLLZJSXYS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_WXLJJSXYS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_BXGGZJSYQ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_DTGGJSXY"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GGJSXY_XG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_3CRZSQQRB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_TZ3CZLTZ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_NSJ3CSQZL"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMJYJL"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_KHZL"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SZWJ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SZWTQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_KHDD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_IMDS_CAMDS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_KZJH_SSC"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_PXJH"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_LCGHJCB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMLCGHQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZYJB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMLCGHHYJY"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_ZXPSB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_DSJDZJ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZKFJDB"> </handler>
+
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_FGFQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_QQZLFXCH"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_LJCLJYBG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_LJXNJYBG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_LJCCJYBG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_JYZDSQD_ZDS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_JJSYSMS"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GYSSJ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GYSPPAP"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GYSZLWTCL"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SCZBJH"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CNXQFX"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CLCSBG_NB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CLCSBG_WW"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XNCSBG_NB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XNCSBG_WW"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CCCSBG_NB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CCCSBG_WW"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_LJAQCSBG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CPPBQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_FRJSYQ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_ZXPSB_XG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_BZGF"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CJPMBJT"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_PXJL"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_PXJL_XG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_KZJH_SC"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZJYJL"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMLCPSB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_NBGCSHBG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_DSIJDZJ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_MSAXYFX"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_MSACFXZXXFX"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SPC"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_X_2FX"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_JJJDBG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_FYJQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_WGJPZBG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_WGSC"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_EZJH"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_PSWKHPZBG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_PPAPZLQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_KHGCSHBG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SBNLFX"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZJDB_PIPFP"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZJDB_DM"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZJDB_PTPM"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZJDB_ZPGZ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XXMPPJH"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_BZPJ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XXMZLPJB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_YJZLBSXWJPJB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_YJHHYJY"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMLSKFJYJL"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_CXFWHZC"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XNJSYQ"> </handler>
+ <!--> 数据发放记录
+ <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SJFFJL_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SJFFJL"> </handler>
+  <!-->
+  
+  <!--> 变更<!-->    
+   <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GGSQPSD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GCGGTZD"> </handler>
+  <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_WLDCB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GCGGGJB"> </handler>
+  <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GCGGJL"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMJHBGD"> </handler>
+  <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMEOP"> </handler>
+ 
+ <!--erp集成-->     <!--JF3_ERP_WLFQ   JF3_ERP_WLECN    JF3_ERP_BOMTRANS   JF3_ERP_PROJ  JF3_ERP_CREATE_PROJ-->
+ <handler class="com.connor.jifeng.plm.erp.jfom010.JFomErpWlFq" commandId="JF3_ERP_WLFQ"> </handler>
+ <handler class="com.connor.jifeng.plm.erp.jfom011.JFomErpWlEcn" commandId="JF3_ERP_WLECN"> </handler>
+ <handler class="com.connor.jifeng.plm.erp.jfom012.JFomErpBomEcn" commandId="JF3_ERP_BOMTRANS"> </handler>
+ <handler class="com.connor.jifeng.plm.erp.jfom013.JFomErpProjEcn" commandId="JF3_ERP_PROJ"> </handler>
+ <handler class="com.connor.jifeng.plm.erp.jfom014.JFomErpProjCreate" commandId="JF3_ERP_CREATE_PROJ"> </handler>
+   
+   <!-->评审CheckList 
+    <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMKXXFXBG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_TZHSJQD_YFB"> </handler>
+  <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_TZHSJQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_YJPSB_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_YJPSB"> </handler>
+  <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_YJPSBG_XG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_ZXPSB"> </handler>
+  <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMLCPSB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_NBGCSHBG"> </handler>
+  <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMLSKFJYJL"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_XMQDJCB"> </handler>
+  <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_SJDJJCB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_OTSJCB"> </handler>
+  <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_LCGHJCB"> </handler>
+ 
+   <!-->
+   
+   <!-->2015.10.28新增itemAPQP菜单显示 <!-->   
+ <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_BZGF_XG"> </handler>
+  <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_BZPJ_XG"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_GZJDB_XG"> </handler>
+  <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_JJJDBG_XG"> </handler>
+
+<!-->2015.11.19新增itemAPQP菜单显示 <!-->   
+ <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_JLJYZDS"> </handler>
+ <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_JYZDS"> </handler>
+ <handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_JYJLD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_DWJDZJ"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_ZSMJJDB"> </handler>   
+ 
+ <!-->2016.05.30新增itemAPQP菜单显示 <!-->   
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_KFJDB_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_QQKFFYQD_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_TZPSBG_YFB"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_FSPSBG_YFB"> </handler>
+
+ <!-->2016.08.22新增itemAPQP菜单显示 <!-->  
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_WXJJGQD"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_BZFY"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_WLFY"> </handler>
+<handler class="com.connor.jifeng.plm.handlers.JFormCreateDocumentHandler" commandId="JF3_JSSMYSQD"> </handler>        
+   </extension>
+   
+   
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="com.connor.jifeng.plm.commands.sampleCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+   <!--菜单扩展点!-->
+   <extension
+         point="org.eclipse.ui.menus">
+         <!--主菜单扩展!-->
+         
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+          
+         <!-->新建APQP菜单 <!-->
+         <menu
+               label="APQP文档"
+                mnemonic="M"
+               id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument">
+               <menu
+               		label="一、计划和确定项目"
+               		 mnemonic="M"
+               		id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument1">
+               		
+               		<menu
+               			label="商务部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument1_1">         		
+<command commandId="JF3_HTPSB"  mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_HTPSB"> </command>
+<command commandId="JF3_FXPJB"  mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_FXPJB"> </command>
+<command commandId="JF3_XMKXXFXBG"  mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMKXXFXBG"> </command>
+<command commandId="JF3_XZKXXCN"  mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XZKXXCN"> </command>
+<command commandId="JF3_XMQDRWS"  mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMQDRWS"> </command>
+               		</menu>
+               		<menu
+               			label="项目部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument1_2">
+<command commandId="JF3_XMLXQD"  mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMLXQD"> </command>
+<command commandId="JF3_XXMTZPSB"  mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XXMTZPSB"> </command>
+<command commandId="JF3_XMJSWJQD"  mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMJSWJQD"> </command>
+<command commandId="JF3_XMXZMD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMXZMD"> </command>
+<command commandId="JF3_XMJDB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMJDB"> </command>
+<command commandId="JF3_XMJDB_XG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMJDB_XG"> </command>
+<command commandId="JF3_XMQDB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMQDB"> </command>
+<command commandId="JF3_HYJY" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_HYJY"> </command>
+<command commandId="JF3_XMQDJCB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMQDJCB"> </command>
+<command commandId="JF3_XMYS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMYS"> </command>
+<command commandId="JF3_BZQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_BZQD"> </command>
+<command commandId="JF3_DYJDZJ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_DYJDZJ"> </command>
+               			
+            			
+               		</menu>
+               		<menu
+               			label="质量部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument1_3">
+<command commandId="JF3_ZLMBPPM" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_ZLMBPPM"> </command>
+<command commandId="JF3_BFL" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_BFL"> </command>
+               			
+               		</menu>
+               		<menu
+               			label="研发部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument1_4">
+<command commandId="JF3_BJBOM" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_BJBOM"> </command>
+<command commandId="JF3_BZQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_BZQD"> </command>
+               			
+               		</menu>
+               		<menu
+               			label="IE部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument1_5">
+<command commandId="JF3_XXMGYPSHYJY" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XXMGYPSHYJY"> </command>
+               			
+               		</menu>
+               </menu>
+                <menu
+               		label="二、产品设计和开发"
+               		 mnemonic="M"
+               		id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument2">
+               		<menu
+               			label="研发部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument2_1">
+<command commandId="JF3_KFJDB_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_KFJDB_YFB"> </command>               			
+<command commandId="JF3_SYDG_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_SYDG_YFB"> </command>
+<command commandId="JF3_CPGNJZ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CPGNJZ"> </command>
+<command commandId="JF3_DFMEA" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_DFMEA"> </command>
+<command commandId="JF3_SJBOM" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_SJBOM"> </command>
+<command commandId="JF3_TZHSJQD_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_TZHSJQD_YFB"> </command>
+<command commandId="JF3_WTQD_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_WTQD_YFB"> </command>
+
+<command commandId="JF3_TZPSBG_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_TZPSBG_YFB"> </command>
+<command commandId="JF3_FSPSBG_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_FSPSBG_YFB"> </command>
+
+
+<command commandId="JF3_TSTXQD_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_TSTXQD_YFB"> </command>
+
+<command commandId="JF3_SLMKFRWS_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_SLMKFRWS_YFB"> </command>
+
+<command commandId="JF3_GZRWS_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZRWS_YFB"> </command>
+<command commandId="JF3_CPSJRWS_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CPSJRWS_YFB"> </command>
+
+
+<command commandId="JF3_YJPSB_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_YJPSB_YFB"> </command>
+
+<command commandId="JF3_XMJYJL_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMJYJL_YFB"> </command>
+
+<command commandId="JF3_LJLLB_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_LJLLB_YFB"> </command>
+
+
+
+
+
+
+
+
+
+
+
+
+<command commandId="JF3_SJDJJCB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_SJDJJCB"> </command>
+<command commandId="JF3_QQKFFYQD_YFB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_QQKFFYQD_YFB"> </command>
+<command commandId="JF3_DEJDZJ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_DEJDZJ"> </command>
+               			
+               		</menu>
+               </menu>
+                <menu
+               		label="三、过程设计和开发"
+               		 mnemonic="M"
+               		id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument3">
+               		<menu
+               			label="项目部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument3_1">
+<command commandId="JF3_TZHSJQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_TZHSJQD"> </command>
+<command commandId="JF3_GCLCT" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GCLCT"> </command>
+<command commandId="JF3_TSTXQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_TSTXQD"> </command>
+<command commandId="JF3_CLTDB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CLTDB"> </command>
+<command commandId="JF3_BOM" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_BOM"> </command>
+<command commandId="JF3_GZQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZQD"> </command>
+<command commandId="JF3_GZQD_XG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZQD_XG"> </command>
+<command commandId="JF3_SJFFJL" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_SJFFJL"> </command>
+<command commandId="JF3_WTQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_WTQD"> </command>
+<command commandId="JF3_SYDG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_SYDG"> </command>
+<command commandId="JF3_CPPZB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CPPZB"> </command>
+<command commandId="JF3_PFMEA" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_PFMEA"> </command>
+<command commandId="JF3_KZJH_YJ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_KZJH_YJ"> </command>
+<command commandId="JF3_YJPSB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_YJPSB"> </command>
+<command commandId="JF3_YJPSBG_XG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_YJPSBG_XG"> </command>
+<command commandId="JF3_DFBWTQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_DFBWTQD"> </command>
+<command commandId="JF3_OTSJCB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_OTSJCB"> </command>
+<command commandId="JF3_ZYZDSQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_ZYZDSQD"> </command>
+
+<command commandId="JF3_ZYZDS_XG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_ZYZDS_XG"> </command>
+<command commandId="JF3_3CRZSQQRB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_3CRZSQQRB"> </command>
+<command commandId="JF3_TZ3CZLTZ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_TZ3CZLTZ"> </command>
+<command commandId="JF3_NSJ3CSQZL" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_NSJ3CSQZL"> </command>
+
+
+<command commandId="JF3_SZWJ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_SZWJ"> </command>
+<command commandId="JF3_SZWTQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_SZWTQD"> </command>
+<command commandId="JF3_KHDD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_KHDD"> </command>
+
+<command commandId="JF3_KZJH_SSC" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_KZJH_SSC"> </command>
+<command commandId="JF3_PXJH" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_PXJH"> </command>
+<command commandId="JF3_LCGHJCB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_LCGHJCB"> </command>
+<command commandId="JF3_XMLCGHQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMLCGHQD"> </command>
+<command commandId="JF3_GZYJB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZYJB"> </command>
+<command commandId="JF3_XMLCGHHYJY" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMLCGHHYJY"> </command>
+<command commandId="JF3_ZXPSB_XG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_ZXPSB"> </command>
+<command commandId="JF3_BZGF_XG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_BZGF_XG"> </command>
+<command commandId="JF3_DSJDZJ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_DSJDZJ"> </command>
+<command commandId="JF3_FGFQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_FGFQD"> </command>
+
+<menu
+               			label="设计任务书"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument7_1">
+ <!--设计任务书!-->
+<command commandId="JF3_SLMKFRWS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_SLMKFRWS"> </command>
+<command commandId="JF3_CPSJRWS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CPSJRWS"> </command>
+<command commandId="JF3_GZRWS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZRWS"> </command>
+<command commandId="JF3_MJKFZZSQB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_MJKFZZSQB"> </command>
+<command commandId="JF3_GZSCXJSRWS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZSCXJSRWS"> </command>
+<command commandId="JF3_MJGZRWS_XG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_MJGZRWS_XG"> </command>
+<command commandId="JF3_JJRWS_XG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_JJRWS_XG"> </command>
+<command commandId="JF3_DMSQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_DMSQD"> </command>
+ <!--设计任务书!-->
+ </menu>
+
+<menu
+               			label="技术资料"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument7_2">
+ <!--技术资料!-->
+<command commandId="JF3_CPBZT" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CPBZT"> </command>
+<command commandId="JF3_LJLLB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_LJLLB"> </command>
+<command commandId="JF3_BMCLYQ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_BMCLYQ"> </command>
+
+<command commandId="JF3_FCQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_FCQD"> </command>
+<command commandId="JF3_HJJSYQ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_HJJSYQ"> </command>
+
+<command commandId="JF3_LJLLBTXSM" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_LJLLBTXSM"> </command>
+<command commandId="JF3_YDCSYQ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_YDCSYQ"> </command>
+<command commandId="JF3_ZSJPWYSRKJL" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_ZSJPWYSRKJL"> </command>
+
+<command commandId="JF3_JGBZS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_JGBZS"> </command>
+ <!--技术资料!-->
+  </menu>
+
+<menu
+               			label="供应商技术协议和协议清单"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument7_3">
+ <!--供应商技术协议和协议清单!-->
+<command commandId="JF3_GYSJSXYQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GYSJSXYQD"> </command>
+<command commandId="JF3_MLFHJSXY" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_MLFHJSXY"> </command>
+<command commandId="JF3_PUMFHJSXY" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_PUMFHJSXY"> </command>
+<command commandId="JF3_KTJSXYS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_KTJSXYS"> </command>
+<command commandId="JF3_PVCJSXYS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_PVCJSXYS"> </command>
+<command commandId="JF3_ZPMLJSXYS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_ZPMLJSXYS"> </command>
+<command commandId="JF3_ZWMLJSXYS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_ZWMLJSXYS"> </command>
+<command commandId="JF3_SLLZJSXYS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_SLLZJSXYS"> </command>
+<command commandId="JF3_WXLJJSXYS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_WXLJJSXYS"> </command>
+<command commandId="JF3_BXGGZJSYQ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_BXGGZJSYQ"> </command>
+<command commandId="JF3_DTGGJSXY" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_DTGGJSXY"> </command>
+<command commandId="JF3_GGJSXY_XG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GGJSXY_XG"> </command>
+ <!--供应商技术协议&协议清单!-->
+ </menu>
+               			
+               		</menu>
+               		<menu
+               			label="技术部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument3_2">
+<command commandId="JF3_GZKFJDB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZKFJDB"> </command>
+
+               		</menu>
+               		<menu
+               			label="采购部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument3_3">
+<command commandId="JF3_GZKFJDB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZKFJDB"> </command>
+<command commandId="JF3_FGFQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_FGFQD"> </command>
+               			
+               		</menu>
+               		<menu
+               			label="质量部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument3_4">
+<command commandId="JF3_QQZLFXCH" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_QQZLFXCH"> </command>
+<command commandId="JF3_LJCLJYBG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_LJCLJYBG"> </command>
+<command commandId="JF3_LJXNJYBG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_LJXNJYBG"> </command>
+<command commandId="JF3_LJCCJYBG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_LJCCJYBG"> </command>
+
+<command commandId="JF3_JLJYZDS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_JLJYZDS"> </command>
+<command commandId="JF3_JYZDS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_JYZDS"> </command>
+<command commandId="JF3_JYJLD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_JYJLD"> </command>
+<command commandId="JF3_JJSYSMS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_JJSYSMS"> </command>
+<command commandId="JF3_GYSSJ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GYSSJ"> </command>
+<command commandId="JF3_GYSPPAP" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GYSPPAP"> </command>
+<command commandId="JF3_GYSZLWTCL" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GYSZLWTCL"> </command>
+<command commandId="JF3_GZRWS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZRWS"> </command>
+<command commandId="JF3_YJYJQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_YJYJQD"> </command>
+               		</menu>
+               		<menu
+               			label="生产部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument3_5">
+<command commandId="JF3_SCZBJH" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_SCZBJH"> </command>
+<command commandId="JF3_CNXQFX" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CNXQFX"> </command>
+
+               		</menu>
+               		<menu
+               			label="研发部（测试中心）"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument3_6">
+<command commandId="JF3_CLCSBG_NB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CLCSBG_NB"> </command>
+<command commandId="JF3_CLCSBG_WW" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CLCSBG_WW"> </command>
+<command commandId="JF3_XNCSBG_NB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XNCSBG_NB"> </command>
+<command commandId="JF3_XNCSBG_WW" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XNCSBG_WW"> </command>
+<command commandId="JF3_CCCSBG_NB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CCCSBG_NB"> </command>
+<command commandId="JF3_CCCSBG_WW" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CCCSBG_WW"> </command>
+<command commandId="JF3_LJAQCSBG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_LJAQCSBG"> </command>
+<command commandId="JF3_GZRWS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZRWS"> </command>
+               			
+               		</menu>
+               		<menu
+               			label="试制部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument3_7">
+<command commandId="JF3_CPPBQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CPPBQD"> </command>
+<command commandId="JF3_FRJSYQ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_FRJSYQ"> </command>
+
+<command commandId="JF3_ZXPSB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_ZXPSB"> </command>
+<command commandId="JF3_ZYZDSQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_ZYZDSQD"> </command>
+<command commandId="JF3_ZYZDS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_ZYZDS"> </command>
+
+               		</menu>
+               		<menu
+               			label="注塑部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument3_8">
+<command commandId="JF3_GZKFJDB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZKFJDB"> </command>
+
+               		</menu>
+               		<menu
+               			label="IE部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument3_9">
+<command commandId="JF3_CJPMBJT" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CJPMBJT"> </command>
+<command commandId="JF3_GZRWS" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZRWS"> </command>
+<command commandId="JF3_BZGF" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_BZGF"> </command>               			
+               		</menu>
+               </menu>
+               <menu
+               		label="四、产品和过程确认"
+               		 mnemonic="M"
+               		id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument4">
+               		<menu
+               			label="项目部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument4_1">
+<command commandId="JF3_PXJL" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_PXJL"> </command>
+<command commandId="JF3_PXJL_XG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_PXJL_XG"> </command>
+<command commandId="JF3_KZJH_SC" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_KZJH_SC"> </command>
+<command commandId="JF3_GZJYJL" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZJYJL"> </command>
+<command commandId="JF3_XMLCPSB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMLCPSB"> </command>
+<command commandId="JF3_NBGCSHBG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_NBGCSHBG"> </command>
+
+
+<command commandId="JF3_GZJDB_XG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZJDB_XG"> </command>
+<command commandId="JF3_GZJDB_PIPFP" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZJDB_PIPFP"> </command>
+<command commandId="JF3_GZJDB_PTPM" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZJDB_PTPM"> </command>
+<command commandId="JF3_DSIJDZJ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_DSIJDZJ"> </command>              			
+               		</menu>
+               		<menu
+               			label="质量部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument4_2">
+<command commandId="JF3_MSAXYFX" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_MSAXYFX"> </command>
+<command commandId="JF3_MSACFXZXXFX" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_MSACFXZXXFX"> </command>
+<command commandId="JF3_SPC" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_SPC"> </command>
+<command commandId="JF3_X_2FX" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_X_2FX"> </command>
+<command commandId="JF3_JJJDBG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_JJJDBG"> </command>
+<command commandId="JF3_JJJDBG_XG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_JJJDBG_XG"> </command>
+<command commandId="JF3_FYJQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_FYJQD"> </command>
+<command commandId="JF3_WGJPZBG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_WGJPZBG"> </command>
+<command commandId="JF3_WGSC" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_WGSC"> </command>
+<command commandId="JF3_EZJH" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_EZJH"> </command>
+<command commandId="JF3_PSWKHPZBG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_PSWKHPZBG"> </command>
+<command commandId="JF3_PPAPZLQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_PPAPZLQD"> </command>
+<command commandId="JF3_KHGCSHBG" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_KHGCSHBG"> </command>
+
+               			
+               		</menu>
+               		<menu
+               			label="技术部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument4_3">
+<command commandId="JF3_SBNLFX" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_SBNLFX"> </command>
+<command commandId="JF3_GZJDB_PIPFP" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZJDB_PIPFP"> </command>
+
+<command commandId="JF3_GZJDB_PTPM" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZJDB_PTPM"> </command>
+
+
+               		</menu>
+               		<menu
+               			label="生产部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument4_4">
+<command commandId="JF3_XXMPPJH" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XXMPPJH"> </command>
+               			
+               		</menu>
+               		<menu
+               			label="试制部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument4_5">
+<command commandId="JF3_GZJDB_DM" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZJDB_DM"> </command>
+
+               		</menu>
+               		<menu
+               			label="注塑部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument4_6">
+<command commandId="JF3_ZSMJJDB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_ZSMJJDB"> </command>
+
+               		</menu>               		
+               		<menu
+               			label="IE部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument4_7">
+
+<command commandId="JF3_GZJYJL" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZJYJL"> </command>
+<command commandId="JF3_GZJDB_ZPGZ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_GZJDB_ZPGZ"> </command>
+               			
+               		</menu>
+               		
+               </menu>
+               
+                <menu
+               		label="五、项目移交"
+               		 mnemonic="M"
+               		id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument5">
+               		<menu
+               			label="项目部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument5_1">
+<command commandId="JF3_XXMZLPJB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XXMZLPJB"> </command>
+<command commandId="JF3_YJHHYJY" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_YJHHYJY"> </command>
+<command commandId="JF3_XMLSKFJYJL" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_XMLSKFJYJL"> </command>
+<command commandId="JF3_CXFWHZC" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_CXFWHZC"> </command>
+<command commandId="JF3_DWJDZJ" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_DWJDZJ"> </command>              			
+               		</menu>
+               		<menu
+               			label="质量部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument5_2">
+<command commandId="JF3_YJZLBSXWJPJB" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_YJZLBSXWJPJB"> </command>             			
+               		</menu>
+               		<menu
+               			label="采购部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument5_3">
+<command commandId="JF3_WXJJGQD" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_WXJJGQD"> </command>             			
+               		</menu>
+               		<menu
+               			label="IE部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument5_4">
+<command commandId="JF3_BZFY" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_BZFY"> </command>             			
+               		</menu>
+               		<menu
+               			label="计划物流部"
+               			 mnemonic="M"
+               			id="com.connor.jifeng.plm.menus.sampleMenu.APQPDocument5_5">
+<command commandId="JF3_WLFY" mnemonic="S" id="com.connor.jifeng.plm.menus.sampleCommand.JF3_WLFY"> </command>             			
+               		</menu>               		               		               		
+               </menu>
+         </menu>
+         <!-->数据发放记录<!-->
+         <menu
+               label="数据发放记录"
+                mnemonic="M"
+               id="com.connor.jifeng.plm.menus.sampleMenu.DATARELEASE">
+            	<command
+                  	commandId="JF3_SJFFJL_YFB"
+                 	  mnemonic="S"
+                  	id="com.connor.jifeng.plm.menus.sampleCommand.shujufafang.JF3_SJFFJL_YFB">
+            	</command>
+            	<command
+                  	commandId="JF3_SJFFJL"
+                  	 mnemonic="S"
+                  	id="com.connor.jifeng.plm.menus.sampleCommand.shujufafang2.JF3_SJFFJL">
+            	</command>
+
+         </menu>
+         
+          
+         <!-->变更<!-->
+          <menu
+               label="变更"
+                mnemonic="M"
+               id="com.connor.jifeng.plm.menus.sampleMenu.CHANGECREATE">
+            	<command                                                 
+                 	commandId="JF3_GGSQPSD"
+                 	  mnemonic="S"
+                 	id="com.connor.jifeng.plm.menus.sampleCommand.create.biangeng.JF3_GGSQPSD">
+            	</command>
+
+            	<command
+                  	commandId="JF3_GCGGTZD"
+                  	 mnemonic="S"
+                  	id="com.connor.jifeng.plm.menus.sampleCommand.create.biangeng2.JF3_GCGGTZD">
+            	</command>
+            	
+            	<command
+                  	commandId="JF3_WLDCB"
+                  	 mnemonic="S"
+                  	id="com.connor.jifeng.plm.menus.sampleCommand.create.biangeng2.JF3_WLDCB">
+            	</command>
+            	<command
+                  	commandId="JF3_GCGGGJB"
+                  	 mnemonic="S"
+                  	id="com.connor.jifeng.plm.menus.sampleCommand.create.biangeng2.JF3_GCGGGJB">
+            	</command>
+            	<command
+                  	commandId="JF3_GCGGJL"
+                  	 mnemonic="S"
+                  	id="com.connor.jifeng.plm.menus.sampleCommand.create.biangeng2.JF3_GCGGJL">
+            	</command>
+            	<!--><command
+                  	commandId="JF3_XMJHBGD"
+                  	 mnemonic="S"
+                  	id="com.connor.jifeng.plm.menus.sampleCommand.create.biangeng2.JF3_XMJHBGD">
+            	</command>
+				<!-->
+            	<command
+                  	commandId="JF3_XMEOP"
+                  	 mnemonic="S"
+                  	id="com.connor.jifeng.plm.menus.sampleCommand.create.biangeng2.JF3_XMEOP">
+            	</command>
+         </menu>
+          <!-->评审checklist<!-->
+          <menu
+               label="评审CheckList"
+                mnemonic="M"
+               id="com.connor.jifeng.plm.menus.sampleMenu.CheckList">
+            	<menu
+               		label="会议评审CheckList"
+               		 mnemonic="M"
+               		id="com.connor.jifeng.plm.menus.sampleMenu.CheckList_1">
+               		<command
+                  		commandId="JF3_XMKXXFXBG"
+                 	 	 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create.checklist.JF3_XMKXXFXBG">
+            		</command>
+            		<command
+                  		commandId="JF3_TZHSJQD_YFB"
+                  		 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create2.checklist.JF3_TZHSJQD_YFB">
+            		</command>
+            		<command
+                  		commandId="JF3_TZHSJQD"
+                 	 	 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create.checklist.JF3_TZHSJQD">
+            		</command>
+            		<command
+                  		commandId="JF3_YJPSB_YFB"
+                  		 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create2.checklist.JF3_YJPSB_YFB">
+            		</command>
+            		<command
+                  		commandId="JF3_YJPSB"
+                 	 	 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create.checklist.JF3_YJPSB">
+            		</command>
+            		<command
+                  		commandId="JF3_YJPSBG_XG"
+                  		 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create2.checklist.JF3_YJPSBG_XG">
+            		</command>
+            		<command
+                  		commandId="JF3_ZXPSB"
+                 	 	 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create.checklist.JF3_ZXPSB">
+            		</command>
+            		<command
+                  		commandId="JF3_XMLCPSB"
+                  		 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create2.checklist.JF3_XMLCPSB">
+            		</command>
+            		<command
+                  		commandId="JF3_NBGCSHBG"
+                 	 	 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create.checklist.JF3_NBGCSHBG">
+            		</command>
+            		<command
+                  		commandId="JF3_XMLSKFJYJL"
+                  		 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create2.checklist.JF3_XMLSKFJYJL">
+            		</command>
+               </menu>
+               <menu
+               		label="里程碑CheckList"
+               		 mnemonic="M"
+               		id="com.connor.jifeng.plm.menus.sampleMenu.CheckList_2">
+               		<command
+                  		commandId="JF3_XMQDJCB"
+                 	 	 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create.lichengbei.JF3_XMQDJCB">
+            		</command>
+            		<command
+                  		commandId="JF3_SJDJJCB"
+                  		 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create2.lichengbei.JF3_SJDJJCB">
+            		</command>
+            		<command
+                  		commandId="JF3_OTSJCB"
+                 	 	 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create.lichengbei.JF3_OTSJCB">
+            		</command>
+            		<command
+                  		commandId="JF3_LCGHJCB"
+                  		 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.create2.lichengbei.JF3_LCGHJCB">
+            		</command>
+               </menu>
+         </menu>
+          <!-->技术资料<!-->
+               <menu
+               		label="专项技术资料"
+               		 mnemonic="M"
+               		id="com.connor.jifeng.plm.menus.sampleMenu.Tech">
+               		<command
+                  		commandId="JF3_JSSMYSQD"
+                 	 	 mnemonic="S"
+                  		id="com.connor.jifeng.plm.menus.sampleCommand.jishuziliao.JF3_JSSMYSQD">
+            		</command>
+               </menu>
+         
+         <!--> BOM菜单 <!-->
+         <menu
+               label="BOM"
+                mnemonic="M"
+               id="com.connor.jifeng.plm.menus.sampleMenu.BOM">
+            <command
+                  commandId="exchangeBom"
+                   mnemonic="S"
+                  id="com.connor.jifeng.plm.menus.sampleCommand.BOM">
+            </command>
+         </menu>
+           <!--> 报表菜单<!-->
+         <menu
+               label="报表"
+                mnemonic="M"
+               id="com.connor.jifeng.plm.menus.sampleMenu">
+            <command
+                  commandId="projectChangeCommond"
+                   mnemonic="S"
+                  id="com.connor.jifeng.plm.menus.sampleCommand">
+            </command>
+            <command
+                  commandId="exportBom"
+                   mnemonic="S"
+                  id="com.connor.jifeng.plm.menus.sampleCommand.exportBom">
+            </command>
+            
+         </menu>
+         <!-->
+         ERP集成
+         JF3_ERP_WLFQ   JF3_ERP_WLECN    JF3_ERP_BOMTRANS   JF3_ERP_PROJ
+         <! -->
+         <menu
+               label="ERP集成"
+                mnemonic="M"
+               id="com.connor.jifeng.plm.menus.ERPMENU">
+            <command
+                  commandId="JF3_ERP_WLFQ"
+                   mnemonic="S"
+                  id="com.connor.jifeng.plm.menus.sampleCommand.JF3_ERP_WLFQ">
+            </command>
+            <command
+                  commandId="JF3_ERP_WLECN"
+                   mnemonic="S"
+                  id="com.connor.jifeng.plm.menus.sampleCommand.exportBom.JF3_ERP_WLECN">
+            </command>
+            <command
+                  commandId="JF3_ERP_BOMTRANS"
+                   mnemonic="S"
+                  id="com.connor.jifeng.plm.menus.sampleCommand.exportBom.JF3_ERP_BOMTRANS">
+            </command>
+            <command
+                  commandId="JF3_ERP_PROJ"
+                   mnemonic="S"
+                  id="com.connor.jifeng.plm.menus.sampleCommand.exportBom.JF3_ERP_PROJ">
+            </command>
+            
+            <command
+                  commandId="JF3_ERP_CREATE_PROJ"
+                   mnemonic="S"
+                  id="com.connor.jifeng.plm.menus.sampleCommand.exportBom.JF3_ERP_CREATE_PROJ">
+            </command>
+            
+         </menu>
+         
+      </menuContribution>
+      
+      <!--工具菜单扩展!-->
+      <!-->
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="com.connor.jifeng.plm.toolbars.sampleToolbar">
+            <command
+                  commandId="com.connor.jifeng.plm.commands.sampleCommand"
+                  icon="icons/sample.gif"
+                  tooltip="Say hello world"
+                  id="com.connor.jifeng.plm.toolbars.sampleCommand">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <!-->
+      <!--右键菜单!--> <!--autoUpdateCommond!-->
+      <menuContribution
+            locationURI="popup:org.eclipse.ui.popup.any?after=additions">
+         <command
+               commandId="createWLDCBCommond"
+               style="push">
+            <visibleWhen>
+               <and>
+              		<reference
+                    	 definitionId="com.teamcenter.rac.ui.inMainPerspective">
+               		</reference>
+               		<or>
+                         <with variable="activePartId">
+                         	<equals value="com.teamcenter.rac.ui.views.TCComponentView"> 
+                          	</equals>
+                         </with>                        
+                     </or>
+                     
+               		<iterate ifEmpty="false">
+               			<adapt type="com.teamcenter.rac.kernel.TCComponent">
+               				<or>
+               					<test 
+                                    property="com.teamcenter.rac.kernel.TCComponent.property" 
+                                   	args="object_type" value="JF3_GGSQPSDRevision"> 
+                                </test>
+                                <test 
+                                    property="com.teamcenter.rac.kernel.TCComponent.property" 
+                                   	args="object_type" value="更改申请评审单版本"> 
+                                </test> 
+               				</or>
+               			</adapt>
+               		</iterate>
+               </and>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="createGGGJBCommond"
+               style="push">
+            <visibleWhen>
+               <and>
+              		<reference
+                    	 definitionId="com.teamcenter.rac.ui.inMainPerspective">
+               		</reference>
+               		<or>
+                         <with variable="activePartId">
+                         	<equals value="com.teamcenter.rac.ui.views.TCComponentView">  <!--取消投料菜单只在产品视图中显示 -->
+                          	</equals>
+                         </with>                        
+                     </or>
+                     
+               		<iterate ifEmpty="false">
+               			<adapt type="com.teamcenter.rac.kernel.TCComponent">
+               				<or>
+               					<test 
+                                    property="com.teamcenter.rac.kernel.TCComponent.property" 
+                                   	args="object_type" value="JF3_GGSQPSDRevision"> 
+                                </test>
+                                <test 
+                                    property="com.teamcenter.rac.kernel.TCComponent.property" 
+                                   	args="object_type" value="更改申请评审单版本"> 
+                                </test> 
+               				</or>
+               			</adapt>
+               		</iterate>
+               </and>
+            </visibleWhen>
+         </command>
+         <command
+               commandId="createBGTZDCommond"
+               style="push">
+            <visibleWhen>
+            <and>
+              		<reference
+                    	 definitionId="com.teamcenter.rac.ui.inMainPerspective">
+               		</reference>
+               		<or>
+                         <with variable="activePartId">
+                         	<equals value="com.teamcenter.rac.ui.views.TCComponentView">  <!--取消投料菜单只在产品视图中显示 -->
+                          	</equals>
+                         </with>                        
+                     </or>
+                     
+               		<iterate ifEmpty="false">
+               			<adapt type="com.teamcenter.rac.kernel.TCComponent">
+               				<or>
+               					<test 
+                                    property="com.teamcenter.rac.kernel.TCComponent.property" 
+                                   	args="object_type" value="JF3_GGSQPSDRevision"> 
+                                </test>
+                                <test 
+                                    property="com.teamcenter.rac.kernel.TCComponent.property" 
+                                   	args="object_type" value="更改申请评审单版本"> 
+                                </test> 
+               				</or>
+               			</adapt>
+               		</iterate>
+               </and>
+            
+            </visibleWhen>
+         </command>
+         <command
+               commandId="autoUpdateCommond"
+               style="push">
+            <visibleWhen>
+            	<and>
+              		<reference
+                    	 definitionId="com.teamcenter.rac.ui.inMainPerspective">
+               		</reference>
+               		<or>
+                         <with variable="activePartId">
+                         	<equals value="com.teamcenter.rac.ui.views.TCComponentView">  
+                          	</equals>
+                         </with>                        
+                     </or>
+                     
+               		<iterate ifEmpty="false">
+               			<adapt type="com.teamcenter.rac.kernel.TCComponent">
+               				<or>
+               					<test 
+                                    property="com.teamcenter.rac.kernel.TCComponent.property" 
+                                   	args="object_type" value="JF3_GCGGTZDRevision"> 
+                                </test>
+                                <test 
+                                    property="com.teamcenter.rac.kernel.TCComponent.property" 
+                                   	args="object_type" value="工程更改通知单版本"> 
+                                </test> 
+               				</or>
+               			</adapt>
+               		</iterate>
+               </and>
+            </visibleWhen>
+        </command>
+      </menuContribution>
+   </extension>
+
+</plugin>

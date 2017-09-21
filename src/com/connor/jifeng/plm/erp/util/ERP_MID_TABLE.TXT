@@ -1,0 +1,167 @@
+---创建四张表的puid
+--proj的uid
+create  sequence proj_puid_sequence
+increment by 1  
+start with 100000000000
+nomaxvalue
+nominvalue
+nocache;
+--part的uid
+create  sequence part_puid_sequence
+increment by 1  
+start with 100000000000
+nomaxvalue
+nominvalue
+nocache;
+--bom的uid
+create  sequence bom_puid_sequence
+increment by 1  
+start with 100000000000
+nomaxvalue
+nominvalue
+nocache;
+--change的uid
+create  sequence change_puid_sequence
+increment by 1  
+start with 100000000000
+nomaxvalue
+nominvalue
+nocache;
+
+--批次的sequence
+create  sequence batch_id_sequence
+increment by 1  
+start with 1
+nomaxvalue
+nominvalue
+nocache;
+
+--触发器设置project的puid
+create or  replace trigger erp_proj_trg
+before insert on proj_info_table
+for each row
+begin
+select proj_puid_sequence.nextval into :new.puid from DUAL;
+end;
+--触发器设置part的puid
+create or  replace trigger erp_part_trg
+before insert on part_info_table
+for each row
+begin
+select part_puid_sequence.nextval into :new.puid from DUAL;
+end;
+--触发器设置BOM的puid
+create or  replace trigger erp_bom_trg
+before insert on bom_table
+for each row
+begin
+select bom_puid_sequence.nextval into :new.puid from DUAL;
+end;
+--触发器设置change的puid
+create or  replace trigger erp_change_trg
+before insert on change_table
+for each row
+begin
+select change_puid_sequence.nextval into :new.puid from DUAL;
+end;
+---
+---SELECT batch_id_sequence.nextval FROM DUAL;
+----grant administer database trigger to user_name;
+--------------------------------------------------------------------------------
+
+CREATE TABLE "INFODBA"."PROJ_INFO_TABLE" 
+   (	"PROJ_NUMBER" VARCHAR2(40 BYTE) NOT NULL ENABLE, 
+	"PROJ_CODE" VARCHAR2(10 BYTE), 
+	"PROJ_NAME" VARCHAR2(80 BYTE), 
+	"PROJ_CREATE_DATE" DATE, 
+	"PROJ_NATURE" VARCHAR2(200 BYTE), 
+	"CUSTOMER_MANAGER" VARCHAR2(200 BYTE), 
+	"PLAN_START_DATE" DATE, 
+	"ASSEMBLY_CUSTOMER" VARCHAR2(10 BYTE), 
+	"CUSTOMER" VARCHAR2(10 BYTE), 
+	"MODELS" VARCHAR2(40 BYTE), 
+	"PROJ_TYPE" VARCHAR2(10 BYTE), 
+	"RESP_DEPT" VARCHAR2(100 BYTE), 
+	"PLAN_FINISH_DATE" DATE, 
+	"CONTENT_DESC" VARCHAR2(500 BYTE), 
+	"PROJ_MANAGER" VARCHAR2(10 BYTE) NOT NULL ENABLE, 
+	"PROJ_START_DATE" DATE, 
+	"OTS_DATE" DATE, 
+	"PPAP_DATE" DATE, 
+	"SOP_DATE" DATE, 
+	"LIFE_DATE" VARCHAR2(20 BYTE), 
+	"ANNUAL_OUTPUT" NUMBER, 
+	"PLAN_PROD_DATE" DATE, 
+	"BATCH_ID" NUMBER(12,0) NOT NULL ENABLE, 
+	"STATUS" NUMBER NOT NULL ENABLE, 
+	"PUID" VARCHAR2(40 BYTE) NOT NULL ENABLE, 
+	"ERROR_MSG" VARCHAR2(500 BYTE), 
+	"OPERATE_TIME" DATE, 
+	"COMMIT_TIME" DATE, 
+	 CONSTRAINT "PROJ_INFO_TABLE_PK" PRIMARY KEY ("PUID")
+);
+
+
+  CREATE TABLE "INFODBA"."PART_INFO_TABLE" 
+   (	"PUID" VARCHAR2(40 BYTE) NOT NULL ENABLE, 
+	"PART_NAME" VARCHAR2(120 BYTE) NOT NULL ENABLE, 
+	"PART_REV" VARCHAR2(10 BYTE) NOT NULL ENABLE, 
+	"CUSTOMER_PART_NUMBER" VARCHAR2(40 BYTE), 
+	"PART_SPEC" VARCHAR2(120 BYTE), 
+	"SOURCE" VARCHAR2(10 BYTE), 
+	"MATERIAL" VARCHAR2(200 BYTE), 
+	"COLOR" VARCHAR2(50 BYTE), 
+	"FABRIC" VARCHAR2(100 BYTE), 
+	"PATTERN" VARCHAR2(100 BYTE), 
+	"SURFACE_TREATMENT" VARCHAR2(200 BYTE), 
+	"GRADE" VARCHAR2(200 BYTE), 
+	"IS_STANDARD" VARCHAR2(20 BYTE), 
+	"BATCH_ID" VARCHAR2(40 BYTE) NOT NULL ENABLE, 
+	"STATUS" NUMBER NOT NULL ENABLE, 
+	"RELEASED_STATUS" VARCHAR2(50 BYTE), 
+	"INVALID_DATE" DATE, 
+	"PART_NUMBER" VARCHAR2(40 BYTE) NOT NULL ENABLE, 
+	"ERROR_MSG" VARCHAR2(225 BYTE), 
+	"COMMIT_TIME" DATE, 
+	"OPERATE_TIME" DATE, 
+	"UNIT" VARCHAR2(10 BYTE), 
+	"CLASS_CODE" VARCHAR2(10 BYTE), 
+	"CREATER" VARCHAR2(10 BYTE), 
+	"CREATE_DATE" DATE, 
+	"PROJ_CODE" VARCHAR2(10 BYTE), 
+	 CONSTRAINT "PART_INFO_TABLE_PK" PRIMARY KEY ("PUID")
+   );
+   
+   -----------------------------------------------------------
+    CREATE TABLE "INFODBA"."CHANGE_TABLE" 
+   (	"CHANGE_ID" VARCHAR2(200 BYTE) NOT NULL ENABLE, 
+	"CHANGE_INFO" VARCHAR2(500 BYTE), 
+	"BATCH_ID" NUMBER NOT NULL ENABLE, 
+	"VALID_DATE" DATE, 
+	"STATUS" NUMBER NOT NULL ENABLE, 
+	"PUID" VARCHAR2(40 BYTE) NOT NULL ENABLE, 
+	 CONSTRAINT "CHANGE_TABLE_PK" PRIMARY KEY ("PUID")
+   );
+   ---------------------------------------------------------------
+    CREATE TABLE "INFODBA"."BOM_TABLE" 
+   (	"SEQ_NUMBER" NUMBER NOT NULL ENABLE, 
+	"P_NUMBER" VARCHAR2(200 BYTE) NOT NULL ENABLE, 
+	"PART_NUMBER" VARCHAR2(200 BYTE) NOT NULL ENABLE, 
+	"JOB_NUMBER" VARCHAR2(200 BYTE), 
+	"REPLACE_TYPE" VARCHAR2(200 BYTE) NOT NULL ENABLE, 
+	"VALID_DATE" DATE, 
+	"INVALID_DATE" DATE NOT NULL ENABLE, 
+	"QUANTITY" NUMBER NOT NULL ENABLE, 
+	"ASSEM_QUANTITY" NUMBER NOT NULL ENABLE, 
+	"OTHERS" VARCHAR2(200 BYTE), 
+	"BATCH_ID" NUMBER NOT NULL ENABLE, 
+	"STATUS" NUMBER NOT NULL ENABLE, 
+	"PUID" VARCHAR2(40 BYTE) NOT NULL ENABLE, 
+	"RELEASED_DATE" DATE NOT NULL ENABLE, 
+	"ULLAGE" VARCHAR2(20 BYTE), 
+	"ERROR_MSG" VARCHAR2(255 BYTE), 
+	"COMMIT_TIME" DATE, 
+	"OPERATE_TIME" DATE, 
+	 CONSTRAINT "BOM_TABLE_PK" PRIMARY KEY ("PUID")
+   );
+
